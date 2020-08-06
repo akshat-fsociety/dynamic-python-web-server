@@ -5,7 +5,7 @@ class CGIRequestHandler(http.server.CGIHTTPRequestHandler):
         if self.path == '/':
             self.path = 'index.html'
         elif self.path == '/page':
-            self.path = 'cgi-bin/page.py'
+            self.path = 'page.py'
         return http.server.CGIHTTPRequestHandler.do_GET(self)
 
 
